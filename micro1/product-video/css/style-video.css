@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
+    /* background: #333; */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body.simulate-page {}
+
+
+/* The only rule that matters */
+
+#video-background {
+    /*  making the video fullscreen  */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+body {
+    margin: 0;
+    /* background: #000; */
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.stopfade {
+    opacity: .5;
+}
+
+@media screen and (max-width: 1024px) {
+    video {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    video.productVideo {}
+}
+
+@media screen and (max-width: 414px) {
+    video.productVideo {
+        position: fixed;
+        top: 50%;
+        width: 100%;
+    }
+}

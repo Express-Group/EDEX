@@ -1,0 +1,21 @@
+/*
+Website: Clairvolex Website.
+Author: Hemant Goyal
+Author URI: hemgoyal_1990@yahoo.co.in
+Company: Radical Reflex
+*/
+
+@import url("css/reset.css");
+@import url("css/master.css");
+@import url("css/ie.css");
+
+@import url("css/superfish.css");
+
+/*J Content*/
+@import url("css/jcontent.css");
+
+@import url("css/fancybox.css");
+@import url("css/jquery.fancybox-buttons.css");
+@import url("css/jquery.bxslider.css");
+
+@import url("css/demo.css");

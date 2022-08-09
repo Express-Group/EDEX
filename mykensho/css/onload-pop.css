@@ -1,0 +1,150 @@
+#mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9000;
+    background-color: #000;
+    display: none;
+}
+
+#boxes .window {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 440px;
+    height: 200px;
+    display: none;
+    z-index: 9999;
+    padding: 20px;
+    text-align: center;
+}
+
+#boxes #dialog {
+    width: 800px;
+    height: 350px;
+    padding: 8rem 0;
+    background-color: #ffffffe0;
+    font-size: 31px;
+    font-weight: 400;
+    color: #171717;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -6rem;
+    position: fixed;
+}
+
+#boxes #dialog span {
+    font-weight: 600;
+}
+
+.maintext {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+#lorem {
+    font-size: 12pt;
+    text-align: left;
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#lorem p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #424242;
+    padding: 10px 10px;
+    text-align: center;
+    font-weight: 300;
+}
+
+#popupfoot {
+    font-size: 16pt;
+    padding: 10px 11px;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+#popupfoot a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.agree:hover {
+    color: #000;
+}
+
+.popupoption:hover {
+    color: green;
+}
+
+.popupoption2:hover {
+    color: red;
+}
+
+#popupfoot a.close {
+    opacity: 1;
+}
+
+#popupfoot a img {
+    width: 30px;
+    height: auto;
+    position: relative;
+    top: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    #boxes #dialog {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #popupfoot {
+        padding: 0 0;
+    }
+    #boxes #dialog {
+        width: 320px;
+        font-size: 2rem;
+        padding: 5rem 2rem;
+    }
+    #lorem p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 375) {
+    #boxes #dialog {
+        margin-left: -2rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #boxes #dialog {
+        width: 320px;
+        font-size: 2rem;
+        padding: 3rem 15px 0;
+        height: 308px;
+    }
+    #lorem {
+        margin-top: 13px;
+    }
+    #lorem p {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #boxes #dialog {
+        width: 310px;
+        font-size: 2rem;
+        padding: 4rem 0 0;
+        height: 290px;
+    }
+}

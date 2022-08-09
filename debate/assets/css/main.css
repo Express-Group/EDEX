@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;700&display=swap');
+body{
+	position:relative;
+}
+.header{
+    background: url(../img/headerbg4.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+/* 	-webkit-box-shadow: 0 8px 6px -6px #0000003b;
+    -moz-box-shadow: 0 8px 6px -6px #0000003b;
+    box-shadow: 0 8px 6px -6px #0000003b; */
+	/* margin-bottom:4px; */
+	float:left;
+	width:100%;
+}
+.header img{
+	padding:10px;
+}
+.header .nav-tabs{
+	border:none;
+	margin-top: 2%;
+}
+.header .nav-tabs .nav-link{
+	color:#000;
+	font-family: 'Bubblegum Sans', cursive;
+	font-size:1.2rem;
+}
+.header .nav-tabs .nav-link.active{
+	background-color:transparent;
+	border:none;
+	color: #1b75bc;
+}
+.header .nav-tabs .nav-link:focus, .header .nav-tabs .nav-link:hover{
+	border:none;
+	color:#1b75bc;
+}
+.slider ,.color-border{
+	float:left;
+	width:100%;
+}
+.footer{
+	float:left;
+	width:100%;
+	background: #504F4F;
+    color: #fff;
+	padding: 2%;
+}
+.body-section{
+	background: url(../img/page-bg1.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+	float:left;
+	width:100%;
+}
+.rules-regulation{
+	width:100%;
+	float:left;
+	box-shadow: 0 0 50px 40px #fff;
+	background:#fff;
+	margin-top:8%;
+	margin-bottom:8%;
+	padding: 4% 7% 4%;
+    position: relative;
+}
+.rules-title{
+	font-weight: 700;
+    font-family: 'Signika', sans-serif;
+	color:#0f75bc;
+	font-size: 3.5rem;
+	margin-bottom: 5%;
+}
+.slider-left{
+	position: absolute;
+    top: 50%;
+    left: -5%;
+    transform: translate(0%,-50%);
+	cursor:pointer;
+}
+.slider-right{
+	position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translate(0%,-50%);
+	cursor:pointer;
+}
+.social-icons{
+	margin-bottom: 9%;
+	text-align:center;
+}
+.social-icons a{
+	margin-right: 7px;
+}
+.social-icons img{
+	width: 35px;
+}
+.btn-primary{
+	background-color: #0f75bc !important;
+    border-color: #0f75bc !important;
+}
+p.error ,sup{
+	color:red;
+}
+.imagePreview {
+    width: 100%;
+    height: 180px;
+    background-position: center center;
+    background:url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
+    background-color:#fff;
+    background-size: cover;
+    background-repeat:no-repeat;
+    display: inline-block;
+   /*  box-shadow:0px -3px 6px 2px rgba(0,0,0,0.2); */
+}
+.imgUp .btn-primary{
+	display:block;
+	border-radius:0px;
+	box-shadow:0px 4px 6px 2px rgba(0,0,0,0.2);
+	margin-top:-5px;
+}
+
+#verify_otp input {
+	margin: 0 5px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 50px;
+	border: solid 1px #ccc;
+	box-shadow: 0 0 5px #ccc inset;
+	outline: none;
+	width: 10%;
+	transition: all .2s ease-in-out;
+	border-radius: 3px;
+	
+	&:focus {
+	  border-color: purple;
+	  box-shadow: 0 0 5px purple inset;
+	}
+	
+	&::selection {
+	  background: transparent;
+	}
+}
+.verify-btn{
+	width: 46%;
+    font-size: 21px;
+}
+.vote{
+	font-weight: normal;
+	background: #eee;
+	margin-right: 4%;
+	padding: 5px 22px 8px;
+	border-radius: 41px;
+	font-size: 15px;
+	cursor:pointer;
+}
+.vote-inline{
+	font-weight: normal;
+	background: #eee;
+	margin-right: 4%;
+	padding: 5px 22px 8px;
+	border-radius: 41px;
+	font-size: 15px;
+	cursor:none;
+	opacity:.5;
+	pointer-events: none;
+	touch-action: none;
+}
+.vote-success{
+	font-weight: normal;
+	background: #0f75bc;
+	margin-right: 4%;
+	padding: 5px 22px 8px;
+	border-radius: 41px;
+	font-size: 15px;
+	cursor:none;
+	color:#fff;
+	pointer-events: none;
+	touch-action: none;
+}
+@media only screen and (max-width: 768px){
+	.header .nav-tabs{
+		flex-wrap: unset;
+		-ms-flex-wrap: unset;
+		overflow-x: scroll;
+		flex: 1;
+		width: 100%;
+	}
+	.header .nav-tabs .nav-item{
+		flex: 0 0 auto;
+	}
+	.rules-regulation{
+		margin-top: 22%;
+		margin-bottom: 21%;
+	}
+	.slider-left img , .slider-right img{
+		width: 25px;
+	}
+	.rules-title{
+		font-size: 2.5rem;
+	}
+	iframe{width:100%;}
+	.vote-success , .vote-inline ,.vote{
+		margin-bottom: 17px;
+	}
+	.vd1{
+		margin-bottom: 25px;
+	}
+}

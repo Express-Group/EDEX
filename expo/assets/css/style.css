@@ -1,0 +1,718 @@
+body {
+  margin: 0;
+}
+
+hr {
+  border-top: 1px dotted #58595b;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 0 0 10px;
+  font-family: taun-tamil;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  color: #034EA2;
+}
+
+h1:hover {
+  color: #033979;
+}
+
+h2 {
+  margin: 0 auto;
+  text-align: left;
+  padding: 5px 0 5px 10px;
+  font-family: taun-tamil;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  color: #58595b;
+}
+
+h3 {
+  margin: 0 auto;
+  text-align: left;
+  padding: 1px 0 5px 10px;
+  font-family: taun-tamil;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  color: #034EA2;
+}
+
+h3:hover {
+  color: #033979;
+}
+
+h7 {
+  margin: 0 auto;
+  text-align: left;
+  padding: 1px 0 5px 10px;
+  font-family: taun-tamil;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  color: #034EA2;
+}
+
+h7:hover {
+  color: #033979;
+}
+
+
+
+p {
+  margin: 0 auto;
+  text-align: left;
+  padding: 5px 0 5px 10px;
+  font-family: Noto Sans Tamil;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #231f20;
+}
+
+ul {
+  text-align: left;
+  margin: 2px 2px 2px 2px;
+  font-size: 15px;
+  font-family: Helvetica;
+  padding: 5px 5px 5px 5px;
+  color: white;
+  background-color: #033979;
+}
+
+li {
+  text-align: left;
+  margin: 2px 2px 2px 2px;
+  font-size: 13px;
+  font-family: Helvetica;
+  color: #231f20;
+}
+
+.main-page {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header {
+  padding: 0;
+  z-index: 10000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header img {
+  width: 100%
+}
+
+.mainimage {
+  position: relative;
+}
+
+.mainimage img {
+  width: 100%;
+}
+
+.mainimage1 {
+  position: relative;
+  background-color: white;
+}
+
+.mainimage1 img {
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  margin: 20px;
+  max-width: 450px;
+  padding: 16px;
+  background-color: white;
+}
+
+.container h1 {
+  margin: 0 auto;
+  text-align: left;
+  padding: 1px 0 5px 0;
+  font-family: taun-tamil;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: #034ea2;
+}
+
+.container label {
+  margin: 0 auto;
+  text-align: left;
+  font-family: taun-tamil;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #58595b;
+}
+
+.container1 {
+  position: relative;
+  right: 0;
+  margin: 10px 0 10px 0;
+  text-align: left;
+  max-width: 450px;
+  padding: 16px;
+  background-color: white;
+}
+
+.container1 h1 {
+  margin: 0 auto;
+  text-align: left;
+  padding: 1px 0 5px 0;
+  font-family: taun-tamil;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: #034ea2;
+}
+
+.container1 label {
+  margin: 0 auto;
+  text-align: left;
+  font-family: taun-tamil;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #58595b;
+}
+
+/* Full-width input fields */
+input[type=text], [type=email] {
+  width: 95%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  margin: 2px 0 10px 0;
+  background: #f1f1f1;
+  border: 1px solid #034ea2;
+  line-height: 13px;
+  /* box-shadow: 0 0 4px #034ea2 inset;
+  -webkit-box-shadow: 0 0 4px #034ea2 inset;
+  -moz-box-shadow: 0 0 4px #034ea2 inset;*/
+}
+
+.date {
+  width: 98%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 8px;
+  margin: 2px 0 10px 0;
+  background: #f1f1f1;
+  border: 1px solid #034ea2;
+  /* box-shadow: 0 0 4px #034ea2 inset;
+  -webkit-box-shadow: 0 0 4px #034ea2 inset;
+  -moz-box-shadow: 0 0 4px #034ea2 inset;*/
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: red;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: taun-tamil;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  border: 1px solid #c80000;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: #c80000;
+}
+
+.mainheading {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 10px 10px 10px 10px;
+}
+
+.mainheadingtab1 {
+  width: 300px;
+  background-color: #58595b;
+  margin: 10px 5px 0 5px;
+  text-align: left;
+  border-radius: 3px;
+  overflow: hidden;
+  opacity: .9;
+  display: inline-block;
+}
+
+.mainheadingtab1:hover {
+  opacity: 1;
+  -ms-transform: scale(1.01);
+  /* IE 9 */
+  -webkit-transform: scale(1.01);
+  /* Safari 3-8 */
+  transform: scale(1.01);
+}
+
+.mainheadingtab1 h2 {
+  text-align: left;
+  padding: 10px 0 10px 10px;
+  font-family: taun-tamil;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  color: white;
+}
+
+.w3-animate-fading {
+  animation: fading 10s infinite
+}
+
+@keyframes fading {
+  0% {
+    opacity: .5
+  }
+
+  50% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: .5
+  }
+}
+
+h6 {
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px 15px 0 15px;
+  font-family: Noto Sans Tamil;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1em;
+  color: #231f20;
+}
+
+/*speaker card   border: .5px solid #58595b; */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  max-width: 300px;
+  margin: 15px 5px 5px 5px;
+  text-align: left;
+  display: inline-block;
+}
+
+.card h5 {
+  color: #034EA2;
+  font-family: taun-tamil;
+  text-align: left;
+  padding: 0 0 0 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  margin: 5px auto;
+}
+
+.card h7 {
+  margin: 0 auto;
+  text-align: left;
+  padding-top:5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  font-family: taun-tamil;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  color: #034EA2;
+}
+
+.card h7:hover {
+  color: #033979;
+}
+
+
+.days{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #034EA2;
+  text-align: left;
+  max-width: 90%;
+  padding: 5px 5px 5px 10px;
+}
+.days h8{
+  margin: 0 auto;
+  text-align: left;
+  font-family: taun-tamil;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  color: white;
+
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  margin-top: 10px;
+  padding: 5px 0 5px 10px;
+  text-align: left;
+  display: inline-block;
+  color: white;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #58595b;
+  text-align: left;
+  width: 100%;
+  font-size: 12px;
+}
+
+.card h1 {
+  margin: 0 auto;
+  text-align: center;
+  padding: 1px 0 5px 0;
+  font-family: taun-tamil;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: red;
+}
+
+.card p {
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 0 5px 10px;
+  font-family: Noto Sans Tamil;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  color: #231f20;
+}
+
+.card p1 {
+  margin: 0 0 5px 0;
+  text-align: center;
+  padding: 0 0 10px 10px;
+  font-family: taun-tamil;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #58595b;
+}
+
+.myBtn {
+  position: fixed !important;
+  bottom: 16%;
+  right: 1%;
+  z-index: 10000;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #FF0000;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.myBtn:hover {
+  background-color: #32100d;
+}
+
+.footer {
+  width: 100%;
+  right: 0;
+  position: fixed;
+  color: white;
+  background-color: #034EA2;
+  text-align: center;
+  bottom: 0;
+  z-index: 9999;
+  padding: 5px 5px 5px 5px;
+}
+
+.footer h7 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 0 auto;
+  font-family: taun-tamil;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: white;
+}
+
+.footer img {
+  margin-top: 5px;
+}
+
+@media(min-width:1024px) {
+  .hidden-mobile {
+    display: block;
+  }
+
+  .visible-mobile {
+    display: none;
+  }
+
+  .img {
+    height: 100%;
+  }
+}
+
+@media(max-width:1344px) {
+  .hidden-mobile {
+    display: none;
+  }
+
+  .visible-mobile {
+    display: block;
+  }
+
+  .mainheading {
+    width: 90%;
+  }
+
+  .container {
+    position: relative;
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  input[type=text], [type=email] {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    margin: 2px 0 10px 0;
+    background: #f1f1f1;
+    border: 1px solid #034ea2;
+    line-height: 25px;
+    /* box-shadow: 0 0 4px #034ea2 inset;
+    -webkit-box-shadow: 0 0 4px #034ea2 inset;
+    -moz-box-shadow: 0 0 4px #034ea2 inset;*/
+  }
+
+  .date {
+    width: 101%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 8px;
+    margin: 2px 0 10px 0;
+    background: #f1f1f1;
+    border: 1px solid #034ea2;
+    /* box-shadow: 0 0 4px #034ea2 inset;
+    -webkit-box-shadow: 0 0 4px #034ea2 inset;
+    -moz-box-shadow: 0 0 4px #034ea2 inset;*/
+  }
+
+  .myBtn {
+    position: fixed !important;
+    bottom: 16%;
+    right: 1%;
+    z-index: 10000;
+    font-size: 10px;
+    border: none;
+    outline: none;
+    background-color: #FF0000;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .innerw {
+    width: 95%;
+  }
+  .footer img {
+    width: 140px;
+    height: auto;
+  }
+
+
+}
+
+@media(max-width:882px) {
+  .hidden-mobile {
+    display: none;
+  }
+
+  .visible-mobile {
+    display: block;
+  }
+
+  .mainheading {
+    width: 90%;
+  }
+
+  .container {
+    position: relative;
+    background-color: white;
+    max-width: 100%;
+  }
+
+  input[type=text], [type=email] {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    margin: 2px 0 10px 0;
+    background: #f1f1f1;
+    border: 1px solid #034ea2;
+    line-height: 25px;
+    /* box-shadow: 0 0 4px #034ea2 inset;
+    -webkit-box-shadow: 0 0 4px #034ea2 inset;
+    -moz-box-shadow: 0 0 4px #034ea2 inset;*/
+  }
+
+  .date {
+    width: 103%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 8px;
+    margin: 2px 0 20px 0;
+    background: #f1f1f1;
+    border: 1px solid #034ea2;
+    /* box-shadow: 0 0 4px #034ea2 inset;
+    -webkit-box-shadow: 0 0 4px #034ea2 inset;
+    -moz-box-shadow: 0 0 4px #034ea2 inset;*/
+  }
+
+  .myBtn {
+    position: fixed !important;
+    bottom: 8%;
+    right: 1%;
+    z-index: 10000;
+    font-size: 10px;
+    border: none;
+    outline: none;
+    background-color: #FF0000;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .innerw {
+    width: 95%;
+  }
+
+  .footer img {
+    width: 100px;
+    height: auto;
+  }
+
+  .footer h7 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 0 auto;
+    font-family: taun-tamil;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: white;
+  }
+}
+
+@media(max-width:500px) {
+  .hidden-mobile {
+    display: none;
+  }
+
+  .visible-mobile {
+    display: block;
+  }
+
+  .mainheading {
+    width: 90%;
+  }
+
+  .container {
+    position: relative;
+    background-color: white;
+    max-width: 100%;
+  }
+
+  input[type=text], [type=email] {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    margin: 2px 0 10px 0;
+    background: #f1f1f1;
+    border: 1px solid #034ea2;
+    line-height: 25px;
+    /* box-shadow: 0 0 4px #034ea2 inset;
+    -webkit-box-shadow: 0 0 4px #034ea2 inset;
+    -moz-box-shadow: 0 0 4px #034ea2 inset;*/
+  }
+
+  .date {
+    width: 103%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 8px;
+    margin: 2px 0 20px 0;
+    background: #f1f1f1;
+    border: 1px solid #034ea2;
+    /* box-shadow: 0 0 4px #034ea2 inset;
+    -webkit-box-shadow: 0 0 4px #034ea2 inset;
+    -moz-box-shadow: 0 0 4px #034ea2 inset;*/
+  }
+
+  .myBtn {
+    position: fixed !important;
+    bottom: 2px;
+    right: 3px;
+    z-index: 10000;
+    font-size: 9px;
+    border: none;
+    outline: none;
+    background-color: #FF0000;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 1px;
+  }
+
+  .innerw {
+    width: 95%;
+  }
+
+  .footer img {
+    width: 100px;
+    height: auto;
+  }
+
+  .footer h7 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 0 auto;
+    font-family: taun-tamil;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: white;
+  }
+}

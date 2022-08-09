@@ -1,0 +1,89 @@
+.collegea {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-righ: 0;
+  background-color: #6d6e71;
+  text-align: center;
+}
+
+.innerw {
+  max-width: 1100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  margin: 0 auto;
+  text-align: left;
+
+}
+
+.collegeb {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-righ: 0;
+  text-align: center;
+  padding: 10px auto;
+}
+
+.innern {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px auto;
+}
+
+.collegeheader {
+  margin: 0 auto;
+  }
+.collegeheader img{
+  width: 100%;
+}
+
+.collegeslider {
+  margin: 0 0 0 0;
+}
+
+
+/* tab*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: taun-tamil;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  transition: 0.4s;
+  margin-bottom: 5px;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

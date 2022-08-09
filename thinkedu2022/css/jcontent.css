@@ -1,0 +1,164 @@
+div.jContent
+{
+	float: left;
+		
+}
+
+/*home page css*/
+
+
+#right-col div.slides{
+	background-color: transparent;
+	border-top: 1px solid #9d3638;
+	padding-top: 15px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	width: 680px !important;
+	height: 959px !important;
+}
+
+#right-col div.slides li {
+	list-style-type: none !important;
+}
+
+#right-col div.slides .panel div {
+	width: 270px !important;
+	position: relative;
+	left: 206px;
+}
+
+#right-col div.slides img {
+	border: 6px solid #fff;
+	float: left;
+	border-radius: 3px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+/**/
+
+.box1 div.slides
+{
+	background-color: transparent;
+	border-top: 1px solid #9d3638;
+	padding-top: 15px;
+	margin-top: 15px;
+	width: 340px;
+	height: 330px;
+}
+
+.box1 div.slides img {
+	border: 1px solid #901d23;
+	border-radius: 3px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.box1 div.slides img:nth-child(4n+0) {
+	margin-right: 0px;}
+
+div.jContent p
+{
+	padding: 0px 0px 0px 0px;	
+	margin: 0px 0px 0px 0px;
+}
+
+div.jContent a
+{
+	float: left;
+	display: block;	
+}
+
+div.jContent a.hide
+{
+	visibility: hidden;
+}
+
+/* horizontal */
+
+
+
+div.jc-horizontal a
+{
+	width: 35px;
+	height: 34px;
+}
+
+
+div.jc-horizontal a.prev {
+	width: 10px;
+	height: 16px;
+	float: right;
+	display: block;
+	left: -10px;
+	position: relative;
+	margin-right: 10px;
+	background: url(../images/carausol-arrow.png) no-repeat 0 0;
+}
+
+div.jc-horizontal a.prev:hover {
+	background-position: 0 -19px;
+}
+
+div.jc-horizontal a.next {
+	width: 10px;
+	height: 16px;
+	margin-top: -16px;
+	clear: both;
+	float: right;
+	display: block;
+	background: url(../images/carausol-arrow.png) no-repeat -21px 0;
+}
+
+div.jc-horizontal a.next:hover
+{
+	background-position: -21px -19px;
+}
+
+/* vertical */
+div.jc-vertical
+{
+	margin: 10px 10px 20px 55px; 
+}
+
+
+div.jc-vertical a
+{
+	width: 655px; 
+	height: 34px;
+}
+
+div.jc-vertical a.prev
+{
+	margin: 0px 0px 5px 0px;
+	background: url('../img/arrows/wup.png') no-repeat top center;
+}
+
+div.jc-vertical a.prev:hover
+{
+	background: url('../img/arrows/bup.png') no-repeat top center;
+}
+
+div.jc-vertical a.next
+{
+	margin: 5px 0px 0px 0px;
+	background: url('../img/arrows/wdown.png') no-repeat top center;
+}
+
+div.jc-vertical a.bottom-arr:hover
+{
+	background: url('../img/arrows/bdown.png') no-repeat top center;
+}
+
+/* auto and circle */
+div.jc-auto
+{
+	margin: 20px 0px 40px 63px; 
+}
+
+
+div.js-circle
+{
+	
+}
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>myKensho Simulate</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style-video.css">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics - Code Begin Here -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110782060-1"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+
+    <style type="text/css">
+        .title {
+            position: absolute;
+            width: 500px;
+            left: 0;
+            top: 120px;
+            font-weight: 700;
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            z-index: 1;
+            transition: top .5s ease;
+        }
+        
+        .button a {
+            padding: 12px 18px;
+            text-align: center;
+            color: block;
+            z-index: 1;
+        }
+        
+        #playOrPauseTitle {}
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics - Code Ended Here -->
+
+</head>
+
+<body class="product-page">
+
+    <div class="main-wrapper">
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="videoToStop" class="img_container" onclick="playOrPauseProdVid()">
+        <!-- <div class="button"><a href="#" id="playOrPauseTitle"><i class="fa fa-pause fa-3x" aria-hidden="true"></i></a></div> -->
+        <div class="button play-button">
+            <!-- <a id="playOrPauseTitle"><img src="images/pause.png"></a> -->
+            <a id="playOrPauseTitle"><img src="images/play.png"></a>
+        </div>
+
+        <video class="productVideo" id="bgvid" playsinline loop>
+    <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+     <source src="video/product.webm" type="video/webm">
+    
+     <source src="video/product.mp4" type="video/mp4">
+     </video>
+
+    </div>
+    <script>
+        var playurl = 'images/pause.png';
+        var pauseUrl = 'images/play-button.png';
+
+
+        var divEle = $("#videoToStop");
+        $("#videoToStop").on('mousemove', function(e) {
+
+            var mouseSide;
+            if ((e.pageX - this.offsetLeft) < $(this).width() / 2) {
+                mouseSide = 'L';
+                $("#playOrPauseTitle").hide();
+            } else {
+                mouseSide = 'R';
+            }
+
+            $("#playOrPauseTitle").show();
+        }).on('mouseout', function() {
+            $("#playOrPauseTitle").hide();
+        });
+
+        var isProdVideoPlaying = false;
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-110782060-1');
+
+
+        playOrPauseProdVid = function() {
+            var vid1 = document.getElementById("bgvid");
+            var vidTitle = document.getElementById("playOrPauseTitle");
+            if (isProdVideoPlaying) {
+                isProdVideoPlaying = false;
+                vid1.pause();
+                // vidTitle.innerHTML = '<i class="fa fa-play-circle fa-4x"  aria-hidden="true"></i>';
+                vidTitle.innerHTML = '<img src="images/play.png">';
+            } else {
+                isProdVideoPlaying = true;
+                vid1.play();
+                // vidTitle.innerHTML = '<i class="fa fa-pause fa-3x" aria-hidden="true">';
+                vidTitle.innerHTML = '<img src="images/pause.png">';
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

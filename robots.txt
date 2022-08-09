@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: http://cms.edexlive.com/*
+Sitemap: https://www.edexlive.com/sitemap.xml
+Sitemap: https://www.edexlive.com/new-sitemap.xml
+
